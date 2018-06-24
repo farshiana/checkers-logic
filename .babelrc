@@ -1,0 +1,14 @@
+{
+	"env": {
+		"test": {
+			"presets": ["env"],
+			"plugins": ["transform-class-properties", "transform-object-rest-spread"]
+		},
+		"prod": {
+			"presets": [
+				["env", { "loose": false, "modules": false }]
+			],
+			"plugins": ["external-helpers", "transform-class-properties", "transform-object-rest-spread"]
+		}
+	}
+}
